@@ -6,14 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio Site</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <h1>Aleksandrs's Portfolio Site</h1>
-  <p>Welcome to my website. Please enjoy your stay.</p>
+    <nav class="topnav" id="myTopnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+  <h1 class="title">Aleksandrs's Portfolio Site</h1>
+  <p>
+    Welcome to my website. Please enjoy your stay.
+ </p>
   <h2>Past Experiece</h2>
   <ul>
     <li>Northcoders Student. 2022 October - Present</li>
     <li>anything else?</li>
   </ul>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 </html>

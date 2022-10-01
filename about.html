@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <h1 class="title">About</h1>
+    <img src="/images/me.jpeg" alt="Picture of me">
+    <p>Hello. I'm Aleksandr.</p>
+    <ul>
+        <li><a href ="https://github.com/Aelorn13" target="_blank">My github</a></li>
+        <li><a href ="https://www.linkedin.com/in/aleksandr-maslov-06660421a" target="_blank">My LinkedIn</a></li>
+        <li><a href="resume.pdf" target="_blank">My resume</a></li>
+        <li>My email: a.maslov364@gmail.com</li>
+        <li>Phone number: 5553535</li>
+    </ul>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>
+</html>
